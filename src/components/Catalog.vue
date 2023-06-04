@@ -1,30 +1,35 @@
 <template>
-  <q-card
-    style="width: 380px; margin: 10px 10px"
-    v-for="card in cards"
-    :key="card.title"
-  >
-    <q-img :src="require(`../../public/images/content/${card.img}`)" alt="" />
-    <div class="q-card_content">
-      <div class="text-h5 text-bold q-card_content__title">
-        {{ card.title }}
-      </div>
-      <div
-        class="text-body1 text-weight-regular q-card_content__text"
-        style="width: 240px"
-      >
-        {{ card.description }}
-      </div>
+  <div class="flex justify-center">
+    <div class="flex" style="max-width: 1200px">
+      <div v-for="card in cards" :key="card.title">
+        <q-card style="width: 380px; margin: 10px 10px">
+          <q-img
+            :src="require(`../../public/images/content/${card.img}`)"
+            alt=""
+          />
+          <div class="q-card_content">
+            <div class="text-h5 text-bold q-card_content__title">
+              {{ card.title }}
+            </div>
+            <div
+              class="text-body1 text-weight-regular q-card_content__text"
+              style="width: 240px"
+            >
+              {{ card.description }}
+            </div>
 
-      <div class="text-h5 text-weight-medium q-card_content__price">
-        {{ card.price }} ₽/шт.
+            <div class="text-h5 text-weight-medium q-card_content__price">
+              {{ card.price }} ₽/шт.
+            </div>
+            <q-btn
+              class="q-card_content__action text-weight-medium"
+              label="Заказать"
+            />
+          </div>
+        </q-card>
       </div>
-      <q-btn
-        class="q-card_content__action text-weight-medium"
-        label="Заказать"
-      />
     </div>
-  </q-card>
+  </div>
 </template>
 
 <script setup>
@@ -36,11 +41,6 @@ const props = defineProps({
 </script>
 
 <style lang="scss" scoped>
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .q-card_content {
   padding: 50px 0 44px 50px;
   &__title,
@@ -63,4 +63,4 @@ const props = defineProps({
     border-radius: 8px;
   }
 }
-</style>>
+</style>

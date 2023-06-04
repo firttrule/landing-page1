@@ -1,7 +1,7 @@
 <template>
-  <q-page class="flex flex-center">
+  <q-page>
     <Catalog :cards="cards" />
-    <!-- <Gallery /> -->
+    <Gallery :images="images" />
   </q-page>
 </template>
 
@@ -66,4 +66,40 @@ const cards = [
     price: 150,
   },
 ];
+
+const images = [
+  {
+    img: "photo.svg",
+  },
+  {
+    img: "photo (1).svg",
+  },
+  {
+    img: "photo (2).svg",
+  },
+  {
+    img: "photo (3).svg",
+  },
+  {
+    img: "photo (4).svg",
+  },
+  {
+    img: "photo (5).svg",
+  },
+  {
+    img: "photo (6).svg",
+  },
+  {
+    img: "photo (7).svg",
+  },
+  {
+    img: "photo (8).svg",
+  },
+];
 </script>
+<style lang="scss" scoped>
+* {
+  margin: 0;
+  padding: 0;
+}
+</style>
