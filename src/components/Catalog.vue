@@ -47,10 +47,6 @@ const props = defineProps({
 <style lang="scss" scoped>
 .q-card_content {
   padding: 50px 0 44px 50px;
-  &__title,
-  &__text {
-    color: #2e363e;
-  }
   &__title {
     margin-bottom: 12px;
   }
@@ -60,7 +56,6 @@ const props = defineProps({
   }
   &__action {
     background: #fed84c;
-    color: #2e363e;
     padding: 20px 40px;
     font-size: 18px;
     border-radius: 8px;

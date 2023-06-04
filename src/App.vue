@@ -17,5 +17,6 @@ export default defineComponent({
   margin: 0;
   padding: 0;
   font-family: "Montserrat";
+  color: #2e363e;
 }
 </style>

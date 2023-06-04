@@ -1,6 +1,9 @@
 <template>
   <q-page>
+    <FirstScreen />
     <Catalog :cards="cards" />
+    <Content1 />
+    <Content2 />
     <Gallery :images="images" />
     <FeedbackForm />
   </q-page>
@@ -11,6 +14,9 @@ import { ref } from "vue";
 import Catalog from "src/components/Catalog.vue";
 import Gallery from "src/components/Gallery.vue";
 import FeedbackForm from "src/components/FeedbackForm.vue";
+import FirstScreen from "src/components/FirstScreen.vue";
+import Content1 from "src/components/Content1.vue";
+import Content2 from "src/components/Content2.vue";
 
 const cards = [
   {

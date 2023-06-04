@@ -45,7 +45,6 @@
               width: 380px;
               background: #fed84c;
               border-radius: 8px;
-              color: #2e363e;
             "
           >
             Сделать заказ
