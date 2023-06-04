@@ -1,4 +1,10 @@
 <template>
+  <div
+    class="text-center text-h3 text-weight-medium"
+    style="margin-bottom: 80px"
+  >
+    Для любых событий и дорогих вам людей
+  </div>
   <div class="flex justify-center">
     <div class="flex q-gutter-md" style="max-width: 1200px">
       <div v-for="card in cards" :key="card.title">
@@ -11,10 +17,7 @@
             <div class="text-h5 text-bold q-card_content__title">
               {{ card.title }}
             </div>
-            <div
-              class="text-body1 text-weight-regular q-card_content__text"
-              style="width: 240px"
-            >
+            <div class="text-body1 text-weight-regular q-card_content__text">
               {{ card.description }}
             </div>
 

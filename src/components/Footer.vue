@@ -1,5 +1,5 @@
 <template>
-  <div class="row text-center q-mx-auto" style="max-width: 605px">
+  <div class="row text-center q-mx-auto" style="max-width: 650px">
     <div class="col-12" style="margin-bottom: 22px">
       <div class="row">
         <div class="col-4">

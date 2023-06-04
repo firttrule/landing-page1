@@ -99,10 +99,4 @@ const images = [
   },
 ];
 </script>
-<style lang="scss" scoped>
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat';
-}
-</style>
+<style lang="scss" scoped></style>

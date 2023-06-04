@@ -1,5 +1,5 @@
 <template>
-  <div style="background: #081130">
+  <div style="background: #081130; padding-top: 300px">
     <div
       style="
         max-width: 1180px;
