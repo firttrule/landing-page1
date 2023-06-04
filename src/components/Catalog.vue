@@ -1,8 +1,8 @@
 <template>
   <div class="flex justify-center">
-    <div class="flex" style="max-width: 1200px">
+    <div class="flex q-gutter-md" style="max-width: 1200px">
       <div v-for="card in cards" :key="card.title">
-        <q-card style="width: 380px; margin: 10px 10px">
+        <q-card style="width: 380px">
           <q-img
             :src="require(`../../public/images/content/${card.img}`)"
             alt=""
@@ -24,6 +24,7 @@
             <q-btn
               class="q-card_content__action text-weight-medium"
               label="Заказать"
+              flat
             />
           </div>
         </q-card>
@@ -45,7 +46,6 @@ const props = defineProps({
   padding: 50px 0 44px 50px;
   &__title,
   &__text {
-    font-family: "Montserrat";
     color: #2e363e;
   }
   &__title {

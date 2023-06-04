@@ -2,13 +2,15 @@
   <q-page>
     <Catalog :cards="cards" />
     <Gallery :images="images" />
+    <FeedbackForm />
   </q-page>
 </template>
 
 <script setup>
 import { ref } from "vue";
-import Catalog from "../components/Catalog.vue";
-import Gallery from "../components/Gallery.vue";
+import Catalog from "src/components/Catalog.vue";
+import Gallery from "src/components/Gallery.vue";
+import FeedbackForm from "src/components/FeedbackForm.vue";
 
 const cards = [
   {
@@ -101,5 +103,6 @@ const images = [
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Montserrat';
 }
 </style>
