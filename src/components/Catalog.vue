@@ -8,7 +8,7 @@
   <div class="flex justify-center">
     <div class="flex q-gutter-md" style="max-width: 1200px">
       <div v-for="card in cards" :key="card.title">
-        <q-card style="width: 380px">
+        <q-card style="width: 380px; border-radius: 10px">
           <q-img
             :src="require(`../../public/images/content/${card.img}`)"
             alt=""
