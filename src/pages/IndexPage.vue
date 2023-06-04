@@ -1,12 +1,12 @@
 <template>
   <q-page class="flex flex-center">
-    <Card :cards="cards" />
+    <Catalog :cards="cards" />
   </q-page>
 </template>
 
 <script setup>
 import { ref } from "vue";
-import Card from "../components/Card.vue";
+import Catalog from "../components/Catalog.vue";
 
 const cards = [
   {
