@@ -1,17 +1,23 @@
 <template>
-  <q-card style="width: 380px">
-    <q-img src="../../public/images/content/img.svg" alt="" />
+  <q-card
+    style="width: 380px; margin: 10px 10px"
+    v-for="card in cards"
+    :key="card.title"
+  >
+    <q-img :src="require(`../../public/images/content/${card.img}`)" alt="" />
     <div class="q-card_content">
-      <div class="text-h5 text-bold q-card_content__title">Кремовый замок</div>
+      <div class="text-h5 text-bold q-card_content__title">
+        {{ card.title }}
+      </div>
       <div
         class="text-body1 text-weight-regular q-card_content__text"
         style="width: 240px"
       >
-        Нежный крем любого цвета на выбор, вафельная основа
+        {{ card.description }}
       </div>
 
       <div class="text-h5 text-weight-medium q-card_content__price">
-        150 ₽/шт.
+        {{ card.price }} ₽/шт.
       </div>
       <q-btn
         class="q-card_content__action text-weight-medium"
@@ -22,6 +28,11 @@
 </template>
 
 <script setup>
+import { defineProps } from "vue";
+
+const props = defineProps({
+  cards: Array,
+});
 </script>
 
 <style lang="scss" scoped>
